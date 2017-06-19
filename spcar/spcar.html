@@ -1,0 +1,62 @@
+<link rel="stylesheet" type="text/css" href="./spcar/spcar.css" />
+<div id="spcar">
+	<div class="ctitle">
+		购物车
+	</div>
+	<div class="location">
+		<p>先锋侠需要您的精确坐标</p>
+	</div>
+	<div class="line"></div>
+	<div class="artical">
+		<p>闪送超市</p>
+		<span>￥0起送，22:00点前满￥30免运费，22:00点前后满￥69免运费</span>
+	</div>
+	<div class="time">
+		<div class="shtime">
+        收货时间
+		</div>
+		<span>
+			一小时送达
+		</span>
+		<p>可预订&gt;</p>
+	</div>
+	<div class="beizhu">
+		<div class="shbz">
+        收货备注
+		</div>
+		<input type="" name="" placeholder="可输入十个字以内的内容要求" id="" value="" />
+	</div>
+	<div class="oderitem">
+		<ul class="oderitem1">
+			<li ng-repeat="(key,item) in list" >
+				<div  ng-click="selectFns()">
+				<label>
+					<input type="checkbox"  ng-model="item.selec" />
+					<div class="select">
+						
+					</div>
+				</label>
+				</div>
+				<div class="img">
+					<img ng-src="{{item.img}}"/>
+				</div>
+				<div class="text"><p>{{item.name}}</p><span>￥{{item.price}}</span></div>
+				<div class="plusaj">
+					<p class="p1" ng-click="compute(item,-1,key)" ng-show="item.num>0" >-</p>
+					<span>{{item.num}}</span>
+					<p class="p2" ng-click="compute(item,1,key)">+</p>
+				</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="all" ng-click="selectAll()">
+		<label>
+					<input type="checkbox"  ng-model="selectBtn" />
+					<div class="select">
+						
+					</div>
+						</label>
+		<a href="">共</a><p>{{priceAll}}</p>
+	</div>
+</div>

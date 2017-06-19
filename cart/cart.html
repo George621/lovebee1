@@ -1,0 +1,57 @@
+
+<link rel="stylesheet" type="text/css" href="./cart/cart.css"/>
+
+<div class="cartBig" ng-controller="carCtrl">
+				<div class="left">
+					<ul>
+						<li ng-click="getData(s,$index)" ng-repeat="s in list track by $index" ng-class="$index==num?'active':''">
+							{{s}}
+						</li>
+						
+					</ul>
+				</div>
+				
+				<div class="right">
+					<div class="top">
+						<div class="type">
+							全部分类
+						</div>
+						<div class="orderBy">
+							综合排序
+						</div>
+					</div>
+					
+					<ul class="list">
+						<li ng-repeat="s in goods[text]">
+							<div class="pic">
+								<img ng-src="{{s.img}}" />
+							</div>
+							    <div class="text">
+								<div class="title">{{s.name}}</div>
+								<div class="mack">
+									<span class="j">精选</span>
+									<span class="s">{{s.pm_desc}}</span>
+								</div>
+								<div class="size">{{s.specifics}}</div>
+								<div class="price">
+									<span class="a">￥{{s.price}}</span>
+									<span class="b">￥{{s.market_price}}</span>
+								</div>
+								<!--<div class="jian">
+									-
+								</div>
+								<p=class="num"></p>
+								<div class="jia">
+									+
+								</div>-->
+								<div class="cart_p">
+					           <p class="p1" ng-show="s.num>0" ng-click="compute(s,-1)">-</p>
+					           <span ng-show="s.num>0">{{s.num}}</span>
+					           <p class="p2" ng-click="compute(s,1)">+</p>
+				                </div>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+			</div>

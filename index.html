@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+	<!--	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />-->
+		<title>爱鲜蜂</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular-route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<script src="home/home.js" type="text/javascript" charset="utf-8"></script>
+		<script src="cart/cart.js" type="text/javascript" charset="utf-8"></script>
+		<script src="yuding/yuding.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/service.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/service.js" type="text/javascript" charset="utf-8"></script>
+		<script src="spcar/spcar.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	
+	<body>
+		<div id="contain">
+			<!--头部-->
+			<div class="header">
+				<div class="saoyisao">
+					<div class="saopic">
+						<img src="img/main_header_scan_btn_dark.png"/>
+					</div>
+					<span class="saoar">
+						扫一扫
+					</span>
+				</div>
+				<div class="adress">
+					<h4>济远路附近</h4>
+				</div>
+				<div class="search">
+					<div class="saopic">
+						<img src="img/main_header_search_btn_dark.png"/>
+					</div>
+					<span class="saoar">
+						搜索
+					</span>
+				</div>
+			</div>
+			
+			<!--主体部分-->
+			<div ng-view>
+				
+			</div>
+			<!--尾部菜单栏-->
+			<footer>
+				<div class="shouye">
+					<dl>
+						<dt><div class="little_bg1">
+							
+						</div></dt>
+						<dd><a href="#home">首页</a></dd>
+					</dl>
+				</div>
+				<div class="shansong">
+					<dl>
+						<dt>
+							<div class="little_bg2">
+							
+						</div>
+						</dt>
+						<dd><a href="#cart">闪送超市</a></dd>
+					</dl>
+				</div>
+				<div class="yuding">
+					<dl>
+						<dt>
+							<div class="little_bg3">
+							
+						</div>
+						</dt>
+						<dd><a href="#yuding">信息按预定</a></dd>
+					</dl>
+				</div>
+				<div class="cart">
+					<dl>
+						<dt>
+							<div class="little_bg4">
+							
+						</div>
+						</dt>
+						<dd><a href="#spcar">购物车</a></dd>
+					</dl>
+				</div>
+				<div class="personal">
+					<dl>
+						<dt>
+							<div class="little_bg5">
+							
+						</div>
+						</dt>
+						<dd><a href="">我的</a></dd>
+					</dl>
+				</div>
+			</footer>
+		</div>
+		
+	</body>
+	
+</html>

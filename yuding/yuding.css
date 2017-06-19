@@ -1,0 +1,115 @@
+#yuding{
+	position: absolute;
+	top: 1.46875rem;
+	left: 0;
+	right: 0;
+	bottom: 1.46875rem;
+	overflow-y: scroll;
+}
+.ytitle{
+	
+	width: 100%;
+	height: 1.40625rem;
+	text-align: center;
+	line-height: 1.40625rem;
+	font-size: 0.359375rem;
+	font-weight: bold;
+	background-color: #f9fafd;
+	border-bottom: 1px solid darkgray ;
+}
+
+.menu_a{
+	font-size:20px;
+	height: 67px;
+	width: 100%;
+	border-bottom: 1px solid gray;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.menu_b{
+			font-size:20px;
+	height: 67px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}		
+.fri_jx{
+	border-bottom: 1px solid gray;
+	width: 100%;
+	height: 0.96875rem;
+	font-size:20px;
+}	
+.fri_jx p{
+	font-size: 23px;
+	line-height: 22px;
+	margin: 15px 0 33px 42px;
+	color:darkgray;
+}
+.fri_jx p:before{
+	content: " ";
+	width: 8px;
+	height: 23px;
+   position: relative;
+   right: 5px;
+   top: 4px;
+	display: inline-block;
+	background-color: deepskyblue;
+}
+.m_liyd{
+	display: flex;
+	width: 100%;
+	height: 3.5625rem;
+	border-bottom:1px solid gray;
+}
+.left_img{
+	width: 4.6875rem;
+	height: 100%;
+	/*border: 1px solid red;*/
+}
+.left_img img{
+	width: 100%;
+	height: 100%;
+}
+.right_desc{
+	
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	height: 100%;
+	/*border: 1px solid red;*/
+}
+.text_i{
+	font-size: 18px;
+	color: darkgray;
+	padding: 15px 0 0 22px;
+	width: 100%;
+}
+.money_c{
+	display: flex;
+	font-size: 23px;
+	font-weight: bold;
+	width: 100%;
+}
+.money_c span{
+	color: red;
+}
+.money_c span:after{
+	content: " ";
+	
+	flex-grow: 1;
+	height: 23px;
+   position: relative;
+   right: 5px;
+   top: 4px;
+	display: inline-block;
+	
+	background-color: deepskyblue;
+}
+.icon_car{
+	width: 54px;
+	height: 54px;
+	border: 1px solid red;
+	border-radius: 27px;
+}

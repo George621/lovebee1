@@ -1,0 +1,45 @@
+<link rel="stylesheet" type="text/css" href="./yuding/yuding.css"/>
+<div id="yuding" ng-controller="yudingCtrl">
+	<div class="ytitle">
+		新鲜预定
+	</div>
+	<div class="line"></div>
+	<div class="menud">
+		<div class="menu_a">
+			<span>精选水果</span>
+			<span>精选水果</span>
+			<span>精选水果</span>
+			<span>精选水果</span>
+			<span>精选水果</span>
+		</div>
+		<div class="menu_b">
+			<span>精选水果</span>
+			<span>精选水果</span>
+			<span>精选水果</span>
+			<span>精选水果</span>
+			<span>精选水果</span>
+		</div>
+		<div class="line"></div>
+		<div class="fri_jx">
+			<p>精选水果</p>
+		</div>
+		<div id="main_yd">
+			<ul>
+				<li class="m_liyd" ng-repeat="p in product">
+					<div class="left_img">
+						<img ng-src="{{p.img}}"/>
+					</div>
+					<div class="right_desc" >
+						<p class="text_i">{{p.name}}</p>
+						<div class="money_c">
+							<span>￥{{p.price}}</span>
+							<div class="icon_car">
+								
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

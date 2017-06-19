@@ -1,0 +1,16 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+body,html{
+	font-family: "微软雅黑";
+	height: 100%;
+}

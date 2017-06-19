@@ -1,0 +1,142 @@
+<link rel="stylesheet" type="text/css" href="./home/home.css" />
+<section ng-controller="homeCtrl">
+	<div id="swiper">
+		<ul>
+			<li ng-repeat="i in data.slide">
+				<img ng-src="{{i.activity.img}}" />
+			</li>
+		</ul>
+	</div>
+	<div class="line"></div>
+	<div id="menu">
+		<dl ng-repeat="m in data.menu">
+			<dt><img ng-src="{{m.activity.img}}"/></dt>
+			<dd>{{m.activity.name}}</dd>
+		</dl>
+
+	</div>
+	<div class="line"></div>
+	<div id="news">
+		<div id="news_pic">
+
+		</div>
+		<p>3M防霾口罩22.8元/3只 1小时闪送</p>
+	</div>
+	<div class="line"></div>
+	<!--鲜牛奶-->
+	<div class="milk">
+		<dl ng-repeat="i in req">
+			<dt><h1>骑士鲜牛奶</h1></dt>
+			<dd><span>尝鲜价6.8元</span><img src="img/milk.png" /></dd>
+		</dl>
+		<dl>
+			<dt><h1>骑士鲜牛奶</h1></dt>
+			<dd class="midline"><span>尝鲜价6.8元</span><img src="img/milk.png" /></dd>
+		</dl>
+		<dl>
+			<dt><h1>骑士鲜牛奶</h1></dt>
+			<dd><span>尝鲜价6.8元</span><img src="img/milk.png" /></dd>
+		</dl>
+	</div>
+	<div class="line"></div>
+	<!--天天特价-->
+	<div class="spcpri">
+		<div class="sp1">
+			<ul class="four">
+				<li>
+					<h2>天天特价</h2><span id="">
+								农夫山泉0.9元
+							</span></li>
+				<li><img src="img/water.png" /></li>
+			</ul>
+		</div>
+		<div class="sp2">
+			<ul class="four">
+				<li>
+					<h2>天天特价</h2><span id="">
+								农夫山泉0.9元
+							</span></li>
+				<li><img src="img/water.png" /></li>
+			</ul>
+		</div>
+		<div class="sp3">
+			<ul class="four">
+				<li>
+					<h2>天天特价</h2><span id="">
+								农夫山泉0.9元
+							</span></li>
+				<li><img src="img/water.png" /></li>
+			</ul>
+		</div>
+		<div class="sp4">
+			<ul class="four">
+				<li>
+					<h2>天天特价</h2><span id="">
+								农夫山泉0.9元
+							</span></li>
+				<li><img src="img/water.png" /></li>
+			</ul>
+		</div>
+	</div>
+	<div class="line"></div>
+	<div class="fruit">
+		<div class="title">
+			<span></span>
+			<h1>优选水果</h1>
+			<a href="#/cart优选水果">更多&nbsp;&gt;</a>
+		</div>
+		<div class="fr_pic">
+			<img src="img/2016093011213251.jpg@90Q.jpg" />
+		</div>
+		<div class="fruit_pear">
+			<ul class="fr_product">
+				<li ng-repeat="i in req" ng-if="$index<3">
+					<div class="pro_pic">
+						<img ng-src="{{i.img}}" />
+					</div>
+					<div class="pro_intro">
+						<h3>{{i.name}}</h3>
+						<p><span class="span_jx">{{i.pm_info}}</span> <span class="span_mz">{{i.pm_desc}}</span></p>
+						<p class="price">{{i.specifics}}</p>
+						<p class="money">￥{{i.price}}
+							<a href="">￥{{i.market_price}}</a>
+						</p>
+
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+<div class="line"></div>
+	<div class="fruit">
+		<div class="title">
+			<span></span>
+			<h1>休闲零食</h1>
+			<a href="#/cart休闲零食">更多&nbsp;&gt;</a>
+		</div>
+		<div class="fr_pic">
+			<img src="img/2016093011213251.jpg@90Q.jpg" />
+		</div>
+		<div class="fruit_pear">
+			<ul class="fr_product">
+				<li ng-repeat="i in req" ng-if="$index>3&&$index<7">
+					<div class="pro_pic">
+						<img ng-src="{{i.img}}" />
+					</div>
+					<div class="pro_intro">
+						<h3>{{i.name}}</h3>
+						<p><span class="span_jx">精选</span> <span class="span_mz">{{i.pm_desc}}</span></p>
+						<p class="price">400-500/盒</p>
+						<p class="money">￥{{i.price}}
+							<a href="">￥{{i.market_price}}</a>
+						</p>
+
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</section>
+<script src="home.js" type="text/javascript" charset="utf-8"></script>

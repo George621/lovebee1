@@ -1,0 +1,148 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+body,html{
+	font-family: "微软雅黑";
+	height: 100%;
+}
+#contain{
+	position: relative;
+	height: 100%;
+	
+}
+.header{
+	
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 1.46875rem;
+	background-color:#ffd600;
+}
+.saopic{
+	 width: 0.59rem;
+    height: 0.59rem;
+}
+.saopic img{
+	width: 100%;
+}
+.saoar{
+	font-size: 0.2rem;
+}
+.saoyisao{
+	position: relative;
+	top:0.28rem ;
+	left:0.234rem ;
+}
+.adress{
+	flex-grow: 1;
+display: flex;
+align-items: center;
+}
+.adress h4{
+font-size: 0.4218rem;
+	display: flex;
+align-items: center;
+}
+.adress h4:after{
+	content: " ";
+	display: inline-block;
+	border:0.15rem solid;
+	border-top: 0.3rem solid;
+    position: relative;
+    top: 0.09rem;
+	border-color: black transparent transparent  transparent;
+}
+.search{
+	position: relative;
+	top:0.28rem ;
+	left:-0.234rem ;
+}
+.line{
+	margin-top:0;
+	width:100%;
+	height: 0.171875rem;
+	background-color: #efefef;
+}
+/*主体部分*/
+
+
+/*尾部菜单*/
+footer{
+	
+	height: 1.5625rem;
+	justify-content: space-around;
+	display: flex;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 1.46875rem;
+	background-color:#ede9d9;
+}
+dl{
+	width: 2rem;
+	/*height: 1.5625rem;*/
+}
+dt{
+	width: 1.40625rem;
+	height: 1rem;
+	/*background-color: pink;*/
+	/*opacity: 0.2;*/
+}
+.little_bg1{
+	width: 0.546875rem;
+	height: 0.640625rem;
+	background: url(../img/main_menu_home_selected.png) no-repeat ;
+	background-size:100% ;
+	position: relative;
+	top:0.234375rem;
+}
+
+.little_bg2{
+	width: 0.546875rem;
+	height: 0.640625rem;
+	background: url(../img/main_menu_order_unselected.png) no-repeat ;
+	background-size:100% ;
+	position: relative;
+	top:0.234375rem;
+}
+.little_bg3{
+	width: 0.546875rem;
+	height: 0.640625rem;
+	background: url(../img/main_menu_preorder_unselected.png) no-repeat ;
+	background-size:100% ;
+	position: relative;
+	top:0.234375rem;
+}
+.little_bg4{
+	width: 0.546875rem;
+	height: 0.640625rem;
+	background: url(../img/main_menu_cart_unselected.png) no-repeat ;
+	background-size:100% ;
+	position: relative;
+	top:0.234375rem;
+}
+.little_bg5{
+	width: 0.546875rem;
+	height: 0.640625rem;
+	background: url(../img/main_menu_my_unselected.png) no-repeat ;
+	background-size:100% ;
+	position: relative;
+	top:0.234375rem;
+}
+dd{
+	line-height: 0.15rem;
+	text-align: center;
+	font-size: 0.359375rem;
+}
