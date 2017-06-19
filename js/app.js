@@ -19,5 +19,5 @@ app.config(["$routeProvider",function($routeProvider){
 		templateUrl:'./yuding/yuding.html',
 		controller:"yudingCtrl"
 	})
-	.otherwise("./home")
+	.otherwise("home")
 }])
