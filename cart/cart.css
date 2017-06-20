@@ -60,6 +60,7 @@
 	width: 100%;
 }
 .list li{
+	position: relative;
 	font-size: 20px;
 	width: 100%;
 	display: flex;

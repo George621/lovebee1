@@ -11,7 +11,7 @@ console.log($scope.goods);
 //		text = text || '热销榜';
 		if(!$scope.goods[text]){
 		
-		$http.get('http://h5.yztctech.net/api/axf/apicategory.php?category='+text)
+		$http.get('http://h5.yztctech.net/api/axf/apicategory.php?category='+$scope.text)
 		.success(function(shuju){
 				$scope.goods[$scope.text] = shuju.data;
 //			$scope.shuju=shuju.data;
