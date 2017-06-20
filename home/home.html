@@ -1,11 +1,22 @@
 <link rel="stylesheet" type="text/css" href="./home/home.css" />
 <section ng-controller="homeCtrl">
-	<div id="swiper">
-		<ul>
-			<li ng-repeat="i in data.slide">
+	<div id="swiper" class="slide">
+		<div class="swiper-container">
+			
+		
+		<div class="swiper-wrapper">
+			
+			<div class="swiper-slide" ng-repeat="i in data.slide">
 				<img ng-src="{{i.activity.img}}" />
-			</li>
-		</ul>
+			</div>
+			<!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
+
+		</div>
+		</div>
 	</div>
 	<div class="line"></div>
 	<div id="menu">

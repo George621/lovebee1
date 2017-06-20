@@ -8,18 +8,19 @@ section{
 	overflow-y: scroll;
 	
 }
-#swiper{
+.slide{
 	width: 100%;
 	/*height: 3.6875rem;*/
+	height: auto;
 }
-#swiper img{
+.swiper-slide img{
 	width: 100%;
 	height: 100%;
 }
-#swiper ul li{
+/*.swiperimg{
 	width: 100%;
 	height: 3.6875rem
-}
+}*/
 #menu{
 	display: flex;
 	justify-content: space-around;
